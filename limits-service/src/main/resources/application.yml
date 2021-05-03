@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: limits-service
+  config:
+    import: configserver:http://localhost:8888
+  profiles:
+    active: dev
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+

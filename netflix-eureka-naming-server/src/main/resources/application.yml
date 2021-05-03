@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: netflix-eureka-naming-server
+  config:
+    import: configserver:http://localhost:8888
+
+server:
+  port: 8761
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: true

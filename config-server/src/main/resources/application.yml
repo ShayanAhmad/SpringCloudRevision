@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: "file:///home/yanix/Documents/DEV_WORKSPACE/JAVA_WORKSPACE/MicroSvces/localgit-config-repo"
+
+server:
+  port: 8888
+
